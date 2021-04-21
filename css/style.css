@@ -1,0 +1,385 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    max-width: 1000px;
+}
+.row{
+    width: 100%;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Mukta', sans-serif;
+
+}
+p{
+    font-family: 'Merriweather', serif;
+}
+a{
+    text-decoration: none;
+}
+/* google font cdn */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Mukta:wght@300&family=Roboto:wght@300&display=swap');
+  
+/* 
+
+
+ */
+  /* Small devece (portable tablet large phone 576px and up) */
+  @media (min-width: 576px) {
+    .col-sm-1 {width: 8.33%; }
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+  }
+
+/* main navbar style start */
+.main-navbar{
+    background-color: rgb(4, 144, 236);
+    margin:10px;
+}
+
+
+.main-navbar-logo a{
+    
+    color: rgb(1, 16, 83);
+    text-align: center;
+
+}
+.main-navbar-logo a img{
+    border-radius: 1000px;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+}
+.main-item ul{
+text-align: center;
+}
+.main-item ul li{
+    margin: 10px;
+    list-style-type: none;
+   
+}
+.main-item ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+    
+}
+.main-item ul a:hover{
+    border-radius: 1000px;
+    padding: 10px;
+    background-color:  rgba(24, 24, 197, 0.5);
+}
+/* main navbar style End */
+/* Start the secound navbar */
+.navbar2{
+    background-color: rgb(95, 48, 117);
+    text-align: center;
+}
+.navbar2 ul li{
+
+    list-style-type:none;
+}
+.navbar2 ul li a{
+    margin: 20px;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.navbar2 ul li a:hover{
+    background-color: tomato;
+    border-radius: 1000px;
+}
+.m0{
+    padding: 0;
+}
+input[type=text]{
+    width: 80%;
+    padding: 10px;
+    border-radius: 1000px;
+}
+/* end the second navbar */
+/* start the middle section style */
+.first-part{
+    background-color: #C4DFB8;
+
+}
+.first-part .col-md-4{
+    padding:0 15px ;
+}
+.card{
+  
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+.card .img-top img{
+    vertical-align: middle;
+    width: 100%;
+    object-fit: cover;
+    height: 115px;
+ 
+}
+.card-body{
+padding: 10px;
+    background-color: rgb(49, 125, 175,0.5);
+}
+.card-body h4{ 
+    padding: 15px 0;
+}
+.card-body p{
+    text-align: justify;
+    padding: 15px 0;
+}
+
+/* end the middle section style */
+
+
+/* start the aside ber style */
+.form-style{
+    background-color: rgb(47, 103, 105);
+    padding: 20px;
+ 
+}
+.input1 input[type=text]{
+    width: 80%;
+    padding:5px 10px;
+    border-radius: 1000px;
+}
+.form-style input{
+    width: 80%;
+    padding:5px 10px;
+    border-radius: 1000px;
+    margin-bottom: 10px;
+    background-color: cornsilk;
+}
+input[type=submit]{
+    cursor: pointer;
+    width:100px;
+    transition: 0.3s;
+    padding: 10px;
+
+}
+input[type=submit]:hover{
+    background-color: rgb(15, 15, 94);
+    color: white;
+}
+input[type=reset]{
+    cursor: pointer;
+    width:100px;
+    padding: 10px;
+}
+input[type=reset]:hover{
+    background-color: rgb(15, 15, 94);
+    color: white;
+}
+label{
+    color: cornsilk;
+}
+
+.about-me{
+    background-color: rgb(160, 173, 160);
+    padding: 10px;
+    margin-top: 20px;
+    text-align: justify;
+
+}
+.about-me h2{
+    text-align: center;
+    padding: 10px;
+
+}
+.about-me p{
+    line-height: 20px;
+}
+/* end the aside ber style */
+
+
+.second-full-wrapper{
+    background-color: rgb(151, 150, 155);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.second-full-wrapper img{
+    width: 90%;
+    height: 534px;
+  
+    border-radius: 1000px;
+}
+.second-full-wrapper h2{
+
+    background-color: chartreuse;
+    color: darkblue;
+    padding: 10px;
+}
+
+/* skill part */
+.skill-container{
+    background-color: rgb(175, 171, 171);
+    width: 100%;
+    padding: 20px;
+    padding-top: 1px;
+    margin-top: 0;
+    margin: 0 auto;
+} 
+
+.skill-container h1{
+    text-align: center;
+    font-weight: bolder;
+    
+}
+.skill-container li{
+    list-style-type: none;
+    font-weight: bolder;
+    margin: 50px 0;
+    text-transform: uppercase;
+    position: relative;
+ }
+ .skill-container li::before{
+     content: '';
+     position: absolute;
+     top:calc(100% + 5px);
+     border-radius: 1000px;
+     left: 0;
+     
+     background-color: rgb(255, 255, 255);
+     width: 100%;
+     height: 15px;
+     }
+
+     .skill-container li::after{
+     content: '';
+     position: absolute;
+     top:calc(100% + 5px);
+     border-radius: 1000px;
+     left: 0;
+     
+     background-color: rgb(255, 0, 0);
+     width: 0;
+     height: 15px;
+
+
+     animation-duration:3s;
+     animation-timing-function: linear;
+     animation-delay: 1s;
+      animation-iteration-count: 2;
+     /* animation-direction: forward; */ 
+     animation-fill-mode: forwards;
+     }
+
+
+
+     .skill-container li.html::after{
+        animation-name: html;              
+     }
+     @keyframes html{
+         to{
+             width: 98%;
+             background-color: green;
+         }
+     }
+
+     .skill-container li.css::after{
+        animation-name: css;              
+     }
+     @keyframes css{
+         to{
+             width: 98%;
+             background-color: rgb(7, 22, 228);
+         }
+     }
+
+     .skill-container li.js::after{
+        animation-name: js;              
+     }
+     @keyframes js{
+         to{
+             width: 10%;
+             background-color: rgb(212, 0, 255);
+         }
+     }
+
+
+     .skill-container li.bootstarp::after{
+        animation-name: bootstarp;              
+     }
+     @keyframes bootstarp{
+         to{
+             width: 98%;
+             background-color: rgb(240, 113, 212);
+         }
+     }
+
+     .skill-container li.photoshop::after{
+        animation-name: photoshop;              
+     }
+     @keyframes photoshop{
+         to{
+             width: 50%;
+             background-color: rgb(210, 255, 10);
+         }
+     }
+
+
+     .skill-container li.java::after{
+        animation-name: java;              
+     }
+     @keyframes java{
+         to{
+             width: 60%;
+             background-color: rgb(255, 149, 10);
+         }
+     }
+
+
+     .skill-container li.react::after{
+        animation-name: react;              
+     }
+     @keyframes react{
+         to{
+             width: 10%;
+             background-color: rgb(10, 255, 243);
+         }
+     }
